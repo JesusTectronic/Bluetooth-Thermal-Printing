@@ -107,12 +107,16 @@ public class BluethoothPrinter {
     }
 
     public void close(int timeout) {
+        delay(time);
+        close();
+    }
+
+    public void delay(long time) {
         try {
             Thread.sleep(time);
         } catch (InterruptedException ex) {
         }
-        close();
-    }
+    } 
 
     public String name() {
         return this.address;
@@ -148,6 +152,10 @@ public class BluethoothPrinter {
 
     public void writeString(String str, String charset) throws IOException {
         write(str.getBytes(charset));
+    }
+
+    public void writeString(String str) throws IOException {
+        writeString(str, "UTF-8");
     }
 
     @SuppressLint("MissingPermission") // Manifest.permission.BLUETOOTH_CONNECT
