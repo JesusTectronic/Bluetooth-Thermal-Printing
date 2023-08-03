@@ -5,7 +5,7 @@ BluethoothPrinter printer =
     new BluethoothPrinter("02:00:00:00:00:00");
 
 try {
-  printer.open(1000);
+  printer.open(4000);
   printer.writeString("CLS\n" +
     "SIZE 51.0 mm, 25.0 mm\n" +
     "GAP 3.0 mm, 0.0 mm\n" +
@@ -31,7 +31,7 @@ BluethoothPrinter printer =
     new BluethoothPrinter("02:00:00:00:00:00");
 
 try {
-  printer.open(1000);
+  printer.open(4000);
   printer.writeString("^XA\n" +
     "^PW407\n" +
     "^LL199\n" +
