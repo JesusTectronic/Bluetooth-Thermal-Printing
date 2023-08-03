@@ -107,7 +107,7 @@ public class BluethoothPrinter {
     }
 
     public void close(int timeout) {
-        delay(time);
+        delay(timeout);
         close();
     }
 
