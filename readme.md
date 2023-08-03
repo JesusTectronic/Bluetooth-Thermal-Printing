@@ -1,6 +1,6 @@
 ```java
 BluethoothPrinter printer = 
-    new BluethoothPrinter("02:00-00-00-00-00");
+    new BluethoothPrinter("02:00:00:00:00:00");
 
 try {
   printer.open(1000);
