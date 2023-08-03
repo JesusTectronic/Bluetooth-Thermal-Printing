@@ -60,3 +60,5 @@ try {
   printer.close(2000);
 }
 ```
+
+![alt text](label.png)
